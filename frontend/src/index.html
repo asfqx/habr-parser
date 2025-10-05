@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top habr articles</title>
+</head>
+<body class="page">
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
+<div class="page__content">
+    
+    <header class="header">
+        <h1 class="header__title">TOP HABR ARTICLES</h1>
+    </header>
+    <main class="content">
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">
+        © 2025 asfqx
+        </p>
+    </footer>
+</div>
+<template id="article-template">
+    <article class="article">
+        <div class="article__container">
+            <h2 class="article__title"></h2>
+            <p class="article__text"></p>
+            <div class="article__footer">
+                <a href="#" class="article__link"></a>
+                <div class="article__views-container">
+                    <p class="article__views"></p>
+                    <img class="article__views-image" src="<%=require('./images/118191.png')%>"></img>
+                </div>
+            </div>
+        </div>
+    </article>
+</template>
+
+</body>
+</html>

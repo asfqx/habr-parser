@@ -2,10 +2,26 @@ import uvicorn
 from fastapi import FastAPI, HTTPException, Request
 from starlette.responses import JSONResponse
 from app.api import router as api_router
+from fastapi.middleware.cors import CORSMiddleware
 from app.web.utils import error_response
 
 app = FastAPI()
 
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:5500",
+    "127.0.0.1"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:

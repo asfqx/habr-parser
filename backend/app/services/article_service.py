@@ -18,10 +18,12 @@ def get_soup(html) -> BeautifulSoup:
 async def get_article_text(url) -> str:
     article_html = await get_html_from_habr(url)
     soup = get_soup(article_html)
-    article_text = soup.find("article", class_="tm-article-presenter__content")
-    if article_text:
-        return str(article_text)
-
+    article_content = soup.find("article", class_="article-body")
+    if not article_content:
+        article_content = soup.find("div", class_="article-formatted-body")
+    if article_content:
+        return str(article_content)
+    return ""
 
 async def get_articles_from_habr() -> list[Article]:
     html = await get_html_from_habr(settings.URL)

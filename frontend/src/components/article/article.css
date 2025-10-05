@@ -1,0 +1,8 @@
+.article {
+    display: flex;
+    width: 60vw;
+    background-color: #2A2A2A;
+    border-radius: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}

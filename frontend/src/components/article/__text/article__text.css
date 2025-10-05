@@ -1,0 +1,8 @@
+.article__text {
+    padding: 0;
+    margin: 0;
+    font-size: clamp(18px, calc(18px + 6 * ((100vw - 320px) / 448)), 24px);
+    color: #929292;
+    font-weight: 400;
+    font-family: Inter;
+}

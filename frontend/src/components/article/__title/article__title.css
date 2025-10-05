@@ -1,0 +1,7 @@
+.article__title {
+    font-family: Inter;
+    color: #929292;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(16pt, calc(16pt + 20 * ((100vw - 320px) / 448)), 36pt);
+}

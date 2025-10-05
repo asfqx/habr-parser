@@ -1,0 +1,9 @@
+.article__views {
+    color: #535353;
+    font-family: Inter;
+    font-weight: 400;
+    align-self: end;
+    font-size: clamp(12pt, calc(12pt + 6 * ((100vw - 320px) / 448)), 18pt);
+    margin: 0;
+    padding: 0;
+}

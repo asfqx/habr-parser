@@ -1,0 +1,14 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: #535353;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.6; 
+}
