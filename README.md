@@ -1,5 +1,7 @@
 # 📰 Habr Parser
 
+solvit.space/projects/habr_parser
+
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.118.0-green?logo=fastapi)
 ![JavaScript](https://img.shields.io/badge/Frontend-JavaScript-yellow?logo=javascript)
